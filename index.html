@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Portfolio Website-Brad</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="style.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/31149d48b0.js" crossorigin="anonymous"></script>
+  <script>
+    document.getElementById("seeAllButton").addEventListener("click", function() {
+        document.querySelector(".additional-projects").classList.remove("d-none");
+        document.getElementById("seeAllButton").classList.add("d-none");
+        document.getElementById("seeLessButton").classList.remove("d-none");
+    });
+
+    document.getElementById("seeLessButton").addEventListener("click", function() {
+        document.querySelector(".additional-projects").classList.add("d-none");
+        document.getElementById("seeAllButton").classList.remove("d-none");
+        document.getElementById("seeLessButton").classList.add("d-none");
+    });
+    </script>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
+        <div class="container">
+            <a class="navbar-brand" href="#">Marshall</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Marshall Royce</h2>
+                <p class="hero_desc">I am a graduate student in Lexington, Kentucky.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/Marshall.Royce.Head-2.jpg" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+                    <p> Hello, I'm Marshall Royce, I recently graduated from the University of Kentucky Honors Collegewith a bachelors in Computer Science. 
+                        I am currently pursuing my Master of Business Administration at the University of Kentucky, specializing in quantitative analytics to finish in May 2024. I'm hoping to find the 
+                        intersection between my technical and software skills gained from my undergraduate studies and the interpersonal and business skills that will 
+                        come with the completion of my MBA. I have had work experience in the US and in Spain at software companies, as well as done consultation work for 
+                        local businesses here in Lexington. I've taken Computer Science classes pertaining to Artifical Intelligence, Machine Learning, Game Development, iOS Development, 
+                        and Database Management. In terms of business classes, I've taken business strategy, managerial economics, and quantitative analysis.
+                    </p>
+                    <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Marshall Royce</li>
+                                <li>Age: 22</li>
+                                <li>Occupation: MBA Student</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Major: Computer Science</li>
+                                <li>School: University of Kentucky</li>
+                                <li>Status: Open to work</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <p> I spent the summer of 2022 working an internship in Barcelona Spain. It gave me an opportunity to put my skills towards real world scenarios,
+                            while also seeing the world and practicing my spanish. While working, I traveled to 4 different countries, 
+                            saw countless beautiful museums and landmarks, and even participated in the Running of the Bulls in Pamplona.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- services section-->
+    <section id="services">
+        <div class="container">
+            <h1 class="text-center">Services</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fas servicesIcon fa-clock"></i>
+                            <h4 class="card-title mt-3">Website Development</h4>
+                            <p class="card-text mt-3">Design, build, deploy, and maintain your own website, customized to your individual needs. I use HTML,
+                                CSS, Javascript, and Bootstrap for my websites.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-layer-group'></i>
+                            <h4 class="card-title mt-3">Desktop Applications</h4>
+                            <p class="card-text mt-3">Create you own customized desktop or web application with an elegant and easy-to-use GUI.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='far servicesIcon fa-check-circle'></i>
+                            <h4 class="card-title mt-3">iOS App Development</h4>
+                            <p class="card-text mt-3">Have a great idea for an app? I can turn it into a reality using Swift and Apple's SDK using new and innovative technologies.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-search'></i>
+                            <h4 class="card-title mt-3">Consultation</h4>
+                            <p class="card-text mt-3">Is your business struggling or facing a big issue? Allow me to offer a fresh perspective utilizing modern research
+                                techniques and frameworks to get to the root of the problem and to propose possible solutions and recommendations for how to move forward.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-shield-alt'></i>
+                            <h4 class="card-title mt-3">Database Management</h4>
+                            <p class="card-text mt-3">Create and manage your own secure customized database to store analytics, metrics, or other information.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class='fas servicesIcon fa-wrench'></i>
+                            <h4 class="card-title mt-3">Data Analysis</h4>
+                            <p class="card-text mt-3">Get business insights, statistics, and recommendations from large datasets. Able to clean, analyze, visualize,
+                                and summarize data.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Portfolio</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/NightmareMaze.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Nightmare Maze</h4>
+                            <p class="card-text">A 3D horror game built using Unity Engine. In a Pac-Man replica map, collect coins while avoiding the enemy;
+                                Collect them all and you can turn on the enemy and destroy them!</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Audio Player</h4>
+                            <p class="card-text">A simple but effective audio player application built using the Qt framework and C++.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/ZCurves.png" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Z Curve Simulator</h4>
+                            <p class="card-text">Application built using Qt and C++ that Simulates a Bezier Spline.</p>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4 additional-projects d-none">
+                    <!-- Additional card content -->
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <a id="seeAllButton" href="#" class="btn btn-primary">See All</a>
+                <a id="seeLessButton" href="#" class="btn btn-primary d-none">See Less</a>
+            </div>
+    </section>
+
+    <!-- contact section-->
+    <section id="contact">
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Contact Me</h1>
+
+            <div class="row mt-4">
+                <div class="col-lg-6">
+                    <!-- to edit google map goto https://www.embed-map.com type your location, generate html code and copy the html  -->
+                    <div style="max-width:100%;list-style:none; transition: none;overflow:hidden;width:500px;height:500px;"><div id="embed-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Gatton+College+of+Business+and+Economics,+South+Limestone,+Lexington,+KY,+USA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="code-for-google-map" rel="nofollow" href="https://kbj9qpmy.com/bp" id="get-map-data">Internet Provider</a><style>#embed-map-display .text-marker{}.map-generator{max-width: 100%; max-height: 100%; background: none;}</style></div>
+                </div>
+                <div class="col-lg-6">
+                    <!-- form fields -->
+                    <script type="text/javascript" src="https://form.jotform.com/jsform/232295697622163"></script>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- footer section-->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- social media icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.instagram.com/royce_marshall" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/marshall-royce/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/mrro253" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
+</body>
+
+</html>
